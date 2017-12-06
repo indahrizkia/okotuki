@@ -15,8 +15,11 @@ Keunggulan :
 
 
 >	Tampilan yang user friendly
+
 >	Terdapat penghitung jumlah total harga barang
+
 >	Tersedia berbagai barang dengan harga yang relatif murah dibandingkan dengan toko lainnya
+
 >	Kualitas barang terjamin baik
 
 Run Aplikasi :
