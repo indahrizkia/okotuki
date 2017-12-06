@@ -1,0 +1,30 @@
+#fullname,#password,#phone,#username{
+    -fx-background-color: rgba(255,255,255,1);
+        -fx-border-color:none;
+	-fx-border-width: 1px;
+}
+#fullname:hover,#password:hover,#phone:hover,#username:hover{
+   -fx-background-color: rgba(255,255,255,0.8);
+        -fx-border-color:#d3d3d3;
+}
+.text-area{
+     -fx-background-color: rgba(255,255,255,0.5);
+}
+.text-area:hover{
+     -fx-background-color: rgba(255,255,255,0.2);
+    -fx-border-color: #00a6ff;
+	-fx-border-width: 3px;
+}
+#login, #signup{
+	-fx-background-color:#00a6ff;
+
+}
+#login:hover,#signup:hover{
+    -fx-background-color:#68c6f4;
+}
+.admin{
+    -fx-opacity: 1;
+}
+.admin:hover{
+    -fx-opacity: 0.7;
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="okotuki.AwalController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0" layoutY="100.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/tumblr_inline_n5bbuqyDDx1r35by1.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="login" layoutX="228.0" layoutY="432.0" mnemonicParsing="false" onAction="#logn" prefHeight="37.0" prefWidth="82.0" stylesheets="@first.css" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="signup" layoutX="310.0" layoutY="432.0" mnemonicParsing="false" onAction="#sign" prefHeight="37.0" prefWidth="82.0" stylesheets="@first.css" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="100.0" fitWidth="178.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/superthumb.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="197.0" layoutX="120.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/superthumb%20(2).jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="90.0" layoutX="225.0" layoutY="7.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/mug_11oz_handle_on_right_mockup_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="172.0" layoutX="310.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/6f61046c5561dd64800f31dd806a13bf.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="501.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@pic/make.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="401.0" opacity="0.5" pickOnBounds="true">
+         <image>
+            <Image url="@pic/sptu.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="199.0" fitWidth="206.0" layoutX="208.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="178.0" layoutY="60.0" text="Let's" textFill="#008cff">
+         <font>
+            <Font name="GoodDog Plain" size="70.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="tukI" fitHeight="150.0" fitWidth="200.0" layoutX="76.0" layoutY="282.0" onMouseClicked="#tukI" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/Maskot.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="328.0" layoutY="60.0" text="Join !" textFill="#008cff">
+         <font>
+            <Font name="GoodDog Plain" size="70.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="Admin" fitHeight="162.0" fitWidth="90.0" layoutX="442.0" layoutY="276.0" onMouseClicked="#Admin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/Admin.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

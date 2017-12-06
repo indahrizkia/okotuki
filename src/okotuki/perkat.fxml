@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="okotuki.PerkatController">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="137.0" layoutX="27.0" layoutY="143.0" pickOnBounds="true">
+         <image>
+            <Image url="@pic/ba101_divablue_2013_ft.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="137.0" layoutX="167.0" layoutY="143.0" pickOnBounds="true">
+         <image>
+            <Image url="@pic/3.Vneck_Kuning.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="137.0" layoutX="307.0" layoutY="142.0" pickOnBounds="true">
+         <image>
+            <Image url="@pic/Black%20B.jpg" />
+         </image>
+      </ImageView>
+      <JFXCheckBox fx:id="c1" layoutX="69.0" layoutY="279.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <ImageView fitHeight="392.0" fitWidth="147.0" layoutX="454.0" layoutY="108.0" opacity="0.56" pickOnBounds="true">
+         <image>
+            <Image url="@pic/ad.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="454.0" layoutY="109.0" prefHeight="392.0" prefWidth="147.0">
+         <children>
+            <Label style="-fx-background-color: white; -fx-label-padding: 33px;" text="Total" textAlignment="CENTER">
+               <font>
+                  <Font name="Tw Cen MT" size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="total" prefHeight="43.0" prefWidth="147.0" />
+            <Button fx:id="hitung" mnemonicParsing="false" onAction="#hitung" prefHeight="39.0" prefWidth="149.0" stylesheets="@kat.css" text="Hitung">
+               <font>
+                  <Font name="Tw Cen MT" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="beli" mnemonicParsing="false" onAction="#beli" prefHeight="39.0" prefWidth="149.0" stylesheets="@kat.css" text="Buy">
+               <font>
+                  <Font name="Tw Cen MT" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="hapus" mnemonicParsing="false" onAction="#hapus" prefHeight="39.0" prefWidth="149.0" stylesheets="@kat.css" text="Delete">
+               <font>
+                  <Font name="Tw Cen MT" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children></VBox>
+      <ImageView fitHeight="110.0" fitWidth="601.0" opacity="0.67" pickOnBounds="true">
+         <image>
+            <Image url="@pic/bj.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="64.0" layoutY="1.0" prefHeight="75.0" prefWidth="130.0" text="Clothes">
+         <font>
+            <Font name="Bakery" size="58.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="c2" layoutX="214.0" layoutY="279.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="c3" layoutX="361.0" layoutY="279.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="c11" layoutX="61.0" layoutY="454.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="c21" layoutX="206.0" layoutY="454.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="c31" layoutX="353.0" layoutY="454.0" text=" ">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXCheckBox>
+      <ImageView fitHeight="98.0" fitWidth="144.0" layoutX="16.0" layoutY="324.0" pickOnBounds="true">
+         <image>
+            <Image url="@pic/16_bdf2a464-dedc-4e8e-ad2a-80dfc065bbed.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="144.0" layoutX="163.0" layoutY="324.0" pickOnBounds="true">
+         <image>
+            <Image url="@pic/144_3d7a00a9-8a04-482c-82df-3d2473599034.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="98.0" fitWidth="144.0" layoutX="308.0" layoutY="324.0" pickOnBounds="true">
+         <image>
+            <Image url="@pic/baju-baru.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="45.0" layoutY="251.0" text="Rp 20.000">
+         <font>
+            <Font name="Tw Cen MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="182.0" layoutY="251.0" text="Rp 30.000">
+         <font>
+            <Font name="Tw Cen MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="251.0" text="Rp 50.000">
+         <font>
+            <Font name="Tw Cen MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="430.0" text="Rp 20.000">
+         <font>
+            <Font name="Tw Cen MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="166.0" layoutY="430.0" text="Rp 40.000">
+         <font>
+            <Font name="Tw Cen MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="310.0" layoutY="430.0" text="Rp 50.000">
+         <font>
+            <Font name="Tw Cen MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="home" fitHeight="39.0" fitWidth="39.0" layoutX="514.0" layoutY="70.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/home.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="namatuki" alignment="CENTER_RIGHT" layoutX="479.0" layoutY="14.0" prefHeight="37.0" prefWidth="109.0">
+         <font>
+            <Font name="Tw Cen MT" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

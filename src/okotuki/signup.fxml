@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="okotuki.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0" opacity="0.76" pickOnBounds="true">
+         <image>
+            <Image url="@pic/LG-65EC9700-lined-up.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff85" height="402.0" layoutX="23.0" layoutY="81.0" stroke="#0087ff" strokeType="INSIDE" strokeWidth="0.0" width="293.0" />
+      <Label layoutX="86.0" layoutY="20.0" style="-fx-padding: 15; -fx-background-color: rgba(255,255,255,0.8);" text="Sign Up" textFill="#00a6ff">
+         <font>
+            <Font name="Tw Cen MT Bold" size="42.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="fullname" alignment="CENTER" focusColor="#00356e" layoutX="53.0" layoutY="114.0" maxWidth="232.0" minWidth="182.0" prefHeight="47.0" prefWidth="232.0" promptText="Fullname" stylesheets="@first.css" unFocusColor="#007bff">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="username" alignment="CENTER" focusColor="#00356e" layoutX="53.0" layoutY="170.0" maxWidth="232.0" minWidth="182.0" prefHeight="47.0" prefWidth="232.0" promptText="Username" stylesheets="@first.css" unFocusColor="#007bff">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="CENTER" focusColor="#00356e" layoutX="53.0" layoutY="225.0" maxWidth="232.0" minWidth="232.0" prefHeight="47.0" prefWidth="232.0" promptText="Password" stylesheets="@first.css" unFocusColor="#0072ff">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXTextField fx:id="phone" alignment="CENTER" focusColor="#00356e" layoutX="53.0" layoutY="318.0" maxWidth="232.0" minWidth="182.0" prefHeight="47.0" prefWidth="232.0" promptText="Phone Number" stylesheets="@first.css" unFocusColor="#007bff">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <TextArea fx:id="address" layoutX="53.0" layoutY="371.0" prefHeight="94.0" prefWidth="232.0" promptText="Address..." stylesheets="@first.css">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.65" specularConstant="0.0" specularExponent="0.0" surfaceScale="1.73">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </TextArea>
+      <RadioButton fx:id="male" layoutX="92.0" layoutY="282.0" mnemonicParsing="false" onAction="#pm" text="Male" textFill="#091d5b">
+         <font>
+            <Font name="Tw Cen MT Bold" size="16.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="gen" />
+         </toggleGroup>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="169.0" layoutY="282.0" mnemonicParsing="false" onAction="#pf" text="Female" textFill="#091d5b" toggleGroup="$gen">
+         <font>
+            <Font name="Tw Cen MT Bold" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </RadioButton>
+      <Button fx:id="signup" layoutX="340.0" layoutY="390.0" mnemonicParsing="false" onAction="#sign" prefHeight="37.0" prefWidth="76.0" stylesheets="@first.css" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="login" layoutX="528.0" layoutY="437.0" mnemonicParsing="false" onAction="#logn" prefHeight="37.0" prefWidth="62.0" style="-fx-background-color: none;" text="Log In" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT Bold Italic" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="227.0" fitWidth="200.0" layoutX="316.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="340.0" layoutY="447.0" text="Do you have an account ? click" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="248.0" fitWidth="147.0" layoutX="366.0" layoutY="101.0" onMouseClicked="#awal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/Maskot.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

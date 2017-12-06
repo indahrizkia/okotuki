@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="okotuki.loginController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="600.0" opacity="0.22" pickOnBounds="true">
+         <image>
+            <Image url="@pic/15338552_258948431189514_7806078536216739840_n.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="229.0" layoutY="266.0" style="-fx-padding: 15;" text="Log  In" textFill="#00a6ff">
+         <font>
+            <Font name="Tw Cen MT Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="username" focusColor="#037cb9" layoutX="178.0" layoutY="342.0" maxWidth="245.0" minWidth="232.0" prefHeight="47.0" prefWidth="245.0" promptText="Username" style="-fx-background-color: rgba(255,255,255,0.65);" stylesheets="@first.css" unFocusColor="#00a6ff">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#005179" layoutX="178.0" layoutY="390.0" maxWidth="245.0" minWidth="224.0" onKeyPressed="#enter" prefHeight="47.0" prefWidth="245.0" promptText="Password" style="-fx-background-color: rgba(255,255,255,0.65);" stylesheets="@first.css" unFocusColor="#00a6ff">
+         <font>
+            <Font name="Tw Cen MT" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXPasswordField>
+      <Button fx:id="login" layoutX="445.0" layoutY="371.0" mnemonicParsing="false" onAction="#logn" prefHeight="37.0" prefWidth="76.0" stylesheets="@first.css" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="signup" layoutX="349.0" layoutY="447.0" mnemonicParsing="false" onAction="#sign" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: none;" text="Sign Up" textFill="#00a6ff">
+         <font>
+            <Font name="Tw Cen MT Italic" size="16.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="176.0" layoutY="458.0" text="To create new account click">
+         <font>
+            <Font name="Tw Cen MT" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="199.0" fitWidth="206.0" layoutX="199.0" layoutY="67.0" onMouseClicked="#awal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pic/logo.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
