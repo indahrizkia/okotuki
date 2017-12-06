@@ -36,7 +36,11 @@ Run Aplikasi :
 
 ![Screenshoot](prof.png)
 
+>>Ini form untuk update profile
+
 ![Screenshoot](update.png)
+
+>>Kemudian, jika ada form yang kosong maka akan menampilkan notif seperti dibawah :
 
 ![Screenshoot](report.png)
  
